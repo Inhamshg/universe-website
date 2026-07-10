@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UniVerse — Actions (Firebase Auth Handler)</title>
+  <meta name="description" content="Handle Firebase Authentication action links: email verification, password reset and email change flows." />
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="/images/logo-mark.svg" alt="UniVerse logo" class="logo" />
+        <div class="brand-text">
+          <span class="brand-name">UniVerse</span>
+          <small class="tagline">Your Academic Social Network</small>
+        </div>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-title">Authentication Actions</h1>
+          <p class="hero-sub">This Actions handler processes Firebase Authentication deep links (oobCode flows) such as email verification, password reset, and change email verification. The page automatically detects the parameters provided in the URL and proceeds with the appropriate flow.</p>
+        </div>
+        <div class="hero-right">
+          <div class="mockup-screen">
+            <img src="/images/actions-hero.png" alt="Actions" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Detected action</h2>
+        <div id="action-card" class="card">
+          <p id="action-desc">Parsing link...</p>
+          <div id="action-controls" style="margin-top:16px"></div>
+        </div>
+
+        <div id="result" style="margin-top:18px"></div>
+
+        <div style="margin-top:20px">
+          <h3>Security note</h3>
+          <p>For full integration, add Firebase SDK initialization to <code>/js/firebase-actions.js</code> and initialize with your project configuration. Do not commit private API keys to a public repository — instead use a secure deployment process and environment-only keys.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><img src="/images/logo-mark.svg" alt="UniVerse" /><div><strong>UniVerse</strong><div class="muted">Your Academic Social Network</div></div></div>
+      <div class="footer-right"><div>Support: <a href="mailto:help.universe.app@gmail.com">help.universe.app@gmail.com</a></div></div>
+    </div>
+  </footer>
+
+  <script src="/js/theme.js"></script>
+  <script src="/js/firebase-actions.js"></script>
+  <script>
+    (function(){
+      const params = UniverseActions.getParams();
+      const card = document.getElementById('action-card');
+      const desc = document.getElementById('action-desc');
+      const controls = document.getElementById('action-controls');
+      const result = document.getElementById('result');
+
+      function showError(err){
+        result.innerHTML = `<div class="card" style="background:linear-gradient(180deg,rgba(255,107,107,0.12),transparent);padding:16px;border-radius:10px;color:var(--text)"><strong>Error</strong><p class=\"muted\">${err && err.message ? err.message : JSON.stringify(err)}</p></div>`;
+      }
+      function showSuccess(msg){
+        result.innerHTML = `<div class="card" style="background:linear-gradient(90deg,var(--primary),var(--primary-variant));padding:16px;border-radius:10px;color:white"><strong>Success</strong><p>${msg}</p></div>`;
+      }
+
+      if(!params.mode || !params.oobCode){
+        desc.textContent = 'No action parameters detected in the URL. This page expects the query parameters `mode` and `oobCode` from Firebase Auth action links.';
+        controls.innerHTML = `<a class="btn btn-outline" href="/">Return home</a>`;
+      } else {
+        desc.innerHTML = `<strong>mode:</strong> ${params.mode} <br><strong>oobCode:</strong> ${params.oobCode}`;
+
+        if(params.mode === 'verifyEmail'){
+          controls.innerHTML = `<button id=\"start-btn\" class=\"btn btn-primary\">Verify Email</button>`;
+        } else if(params.mode === 'resetPassword'){
+          controls.innerHTML = `<div style=\"display:flex;gap:8px;flex-direction:column;max-width:420px\"><label>New password<label><input id=\"new-password\" type=\"password\" placeholder=\"New password\" /><button id=\"start-btn\" class=\"btn btn-primary\">Set new password</button></div>`;
+        } else if(params.mode === 'recoverEmail'){
+          controls.innerHTML = `<button id=\"start-btn\" class=\"btn btn-primary\">Recover Email</button>`;
+        } else {
+          controls.innerHTML = `<button id=\"start-btn\" class=\"btn btn-primary\">Continue</button>`;
+        }
+
+        document.getElementById('start-btn').addEventListener('click', ()=>{
+          result.innerHTML = `<div class=\"card\" style=\"padding:18px;border-radius:12px;display:flex;gap:12px;align-items:center\">Processing<span class=\"muted\">This may take a moment…</span></div>`;
+          UniverseActions.handleAction({
+            onSuccess: (res)=>{ showSuccess('Action completed successfully.'); console.log('Action success', res); },
+            onError: (err)=>{ showError(err); console.error('Action error', err); }
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
