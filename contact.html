@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — UniVerse</title>
+  <meta name="description" content="Contact UniVerse support, partnerships or press. Fill our contact form or reach us by email and phone.">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>form .row{display:flex;gap:12px}form .row .col{flex:1}</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container header-inner"><div class="brand"><img src="/images/logo-mark.svg" alt="UniVerse logo" class="logo"><div class="brand-text"><span class="brand-name">UniVerse</span><small class="tagline">Your Academic Social Network</small></div></div></div></header>
+
+  <main id="main">
+    <section class="hero"><div class="container"><h1 class="hero-title">Contact Us</h1><p class="hero-sub">We're here to help. Use the form below to reach Support, Partnerships or Press. Phone and email contacts are provided for urgent requests.</p></div></section>
+
+    <section><div class="container">
+      <h2>Contact details</h2>
+      <p>Email: <a href="mailto:help.universe.app@gmail.com">help.universe.app@gmail.com</a></p>
+      <p>Phone: <a href="tel:+2348139927759">+2348139927759</a></p>
+
+      <h2>Send us a message</h2>
+      <form id="contact-form" action="/" method="POST" onsubmit="event.preventDefault();alert('This is a demo contact form. Configure server endpoint to receive messages.');">
+        <div class="row">
+          <div class="col"><label>Your name<input name="name" required></label></div>
+          <div class="col"><label>Your email<input name="email" type="email" required></label></div>
+        </div>
+        <div style="margin-top:12px"><label>Subject<input name="subject" required></label></div>
+        <div style="margin-top:12px"><label>Message<textarea name="message" rows="6" required></textarea></label></div>
+        <div style="margin-top:12px"><button class="btn btn-primary" type="submit">Send message</button></div>
+      </form>
+
+      <h2 style="margin-top:20px">Our office</h2>
+      <p>We are remote-first, with regional offices coordinating campus partnerships. Below is a placeholder map — replace with Google Maps iframe in production.</p>
+      <div style="background:rgba(255,255,255,0.02);height:220px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--muted)">Google Maps placeholder</div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><img src="/images/logo-mark.svg" alt="UniVerse"><div><strong>UniVerse</strong><div class="muted">Your Academic Social Network</div></div></div><div class="footer-right"><div>Support: <a href="mailto:help.universe.app@gmail.com">help.universe.app@gmail.com</a></div></div></div></footer>
+  <script src="/js/theme.js"></script>
+</body>
+</html>
