@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="480" viewBox="0 0 240 480">
+  <rect width="240" height="480" rx="20" fill="#0b1220"/>
+  <text x="50%" y="50%" font-family="Inter, Arial, sans-serif" font-size="12" fill="#9fb0c8" dominant-baseline="middle" text-anchor="middle">Small Screen</text>
+</svg>

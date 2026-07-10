@@ -1,0 +1,3 @@
+This is a placeholder file that indicates where to store the APK if you choose to host the binary in this repository.
+
+DO NOT commit production APKs to a public repository unless you intend them to be public. Prefer using a CDN or Play Store link for distribution.
