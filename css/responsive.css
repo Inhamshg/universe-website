@@ -1,0 +1,15 @@
+/* responsive.css — fine-tuned breakpoints */
+@media (max-width:800px){
+  .hero-inner{grid-template-columns:1fr;gap:26px}
+  .mockup-screen{max-width:320px;margin:0 auto}
+  .primary-nav{display:none}
+  .mobile-only{display:inline-flex}
+  .floating-screens{display:none}
+  .cards-grid{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column;gap:16px}
+}
+
+@media (max-width:480px){
+  .hero-title{font-size:40px}
+  .hero-sub{font-size:16px}
+}

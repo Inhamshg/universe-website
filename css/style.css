@@ -1,0 +1,35 @@
+/* style.css — global components and layout */
+/* Import tokens from theme.css — keep layout rules separate */
+
+.header-inner, .container{max-width:var(--max-width);margin:0 auto}
+
+/* basic page layout */
+main{display:block}
+section{padding:36px 0}
+h1,h2,h3,h4{color:var(--text);margin:0 0 10px}
+.lede{color:var(--muted);max-width:70ch}
+
+/* small helpers */
+.grid{display:grid;gap:12px}
+.center{display:flex;align-items:center;justify-content:center}
+
+/* Buttons focus */
+.btn:focus{outline:3px solid rgba(108,140,255,0.18);outline-offset:3px}
+.icon-btn:focus{outline:2px solid rgba(255,255,255,0.06);outline-offset:2px}
+
+/* Cards hover */
+.card:hover{transform:translateY(-6px);transition:transform .32s cubic-bezier(.2,.9,.3,1)}
+
+/* simple ripple on buttons */
+.btn{position:relative;overflow:hidden}
+.btn::after{content:'';position:absolute;left:50%;top:50%;width:0;height:0;border-radius:50%;background:rgba(255,255,255,0.08);transform:translate(-50%,-50%);transition:width .4s ease,height .4s ease}
+.btn:active::after{width:200px;height:200px}
+
+/* small utilities */
+.hidden{display:none}
+
+/* Forms */
+input,textarea,select{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:var(--text)}
+
+/* ensure images don't overflow */
+img{max-width:100%;height:auto;display:block}

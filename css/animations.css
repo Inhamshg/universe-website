@@ -1,0 +1,10 @@
+/* animations.css — shared keyframes and utility classes */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+
+.fade-in{animation:fadeInUp .6s ease both}
+.float{animation:float 4s ease-in-out infinite}
+
+/* scroll reveal helper */
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
