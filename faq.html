@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>FAQ — UniVerse</title>
-  <meta name="description" content="Frequently asked questions about UniVerse. Effective answers for students, staff and captains.">
+  <meta name="description" content="Frequently asked questions about UniVerse. Answers for students, staff, captains, and developers.">
   <link rel="stylesheet" href="/css/theme.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -18,3 +18,558 @@
     <section><div class="container">
       <h2>General</h2>
       <div class="accordion">
+
+<details>
+  <summary>1. What is UniVerse?</summary>
+  <div class="content">UniVerse is an academic social network designed to help university students communicate, collaborate, access campus resources and stay informed through verified department channels and student-led communities.</div>
+</details>
+
+<details>
+  <summary>2. Who can use UniVerse?</summary>
+  <div class="content">UniVerse is intended for university students, faculty, and authorized campus participants. Some universities may restrict access to verified email domains or partner deployments.</div>
+</details>
+
+<details>
+  <summary>3. Is UniVerse free to use?</summary>
+  <div class="content">Core UniVerse features are free for students and staff. Certain premium features or enterprise integrations may be offered under paid plans for universities or partners.</div>
+</details>
+
+<details>
+  <summary>4. What platforms is UniVerse available on?</summary>
+  <div class="content">UniVerse is available on Android (Google Play and APK), web, and will be available on iOS via the App Store — TestFlight invites are offered for early access.</div>
+</details>
+
+<details>
+  <summary>5. How do I get started?</summary>
+  <div class="content">Download the app or visit the web site, create an account using your email, verify the email address and complete profile setup (university, department, level) to receive tailored content.</div>
+</details>
+
+<details>
+  <summary>6. How does UniVerse differ from generic social apps?</summary>
+  <div class="content">UniVerse is built specifically for campus needs with features like department matching, verified captains, course channels, timetables and resource distribution, plus privacy and moderation tuned for academic communities.</div>
+</details>
+
+<details>
+  <summary>7. Can I use UniVerse offline?</summary>
+  <div class="content">Some content is cached for offline viewing, but core features such as messaging, sync and notifications require an internet connection.</div>
+</details>
+
+<details>
+  <summary>8. How do I report abuse or violations?</summary>
+  <div class="content">Use the in-app reporting tools on a message or profile, or email help.universe.app@gmail.com with details and evidence. Our moderation team will review and take action as needed.</div>
+</details>
+
+<details>
+  <summary>9. Where can I find feature updates?</summary>
+  <div class="content">Feature updates and release notes are published on our Changelog and Roadmap pages; subscribe to our announcements for major releases.</div>
+</details>
+
+<details>
+  <summary>10. Who operates UniVerse?</summary>
+  <div class="content">UniVerse is operated by the UniVerse team; contact and company details are available on the About and Team pages. For partnerships or enterprise inquiries use the Contact form.</div>
+</details>
+
+      </div>
+
+      <h2 style="margin-top:20px">Accounts & Security</h2>
+      <div class="accordion">
+
+<details>
+  <summary>11. How do I verify my email?</summary>
+  <div class="content">After signing up, UniVerse sends a verification email with a secure link. Click the link to verify your address; if the link expires, request a new verification email from account settings.</div>
+</details>
+
+<details>
+  <summary>12. I didn’t receive a verification email — what now?</summary>
+  <div class="content">Check your spam/junk folder, ensure the email address is correct, and request a new verification. If problems persist, contact support with your registered email address.</div>
+</details>
+
+<details>
+  <summary>13. How do I reset my password?</summary>
+  <div class="content">Use the "Forgot password" link at sign-in to receive a secure password reset email. Follow the instructions to set a new password; password resets are handled through Firebase Auth flows.</div>
+</details>
+
+<details>
+  <summary>14. Can I use a university single sign-on (SSO)?</summary>
+  <div class="content">Some universities may enable SSO integrations. If your university supports SSO with UniVerse, the option will appear during sign-up or account settings.</div>
+</details>
+
+<details>
+  <summary>15. How do I change my email or recover a hacked account?</summary>
+  <div class="content">For email changes, follow the secure verify-before-change-email flow in account settings. For suspected compromise, contact support immediately and use account recovery processes described in Help Center.</div>
+</details>
+
+<details>
+  <summary>16. What should I do if I lose access to my registered email?</summary>
+  <div class="content">Contact support and provide proof of account ownership (previous login locations, student ID, or other verification). We’ll guide you through a secure recovery process.</div>
+</details>
+
+<details>
+  <summary>17. Does UniVerse support two-factor authentication (2FA)?</summary>
+  <div class="content">We support secure authentication practices; 2FA options are planned and may be available depending on the university policy or account tier. Check account security settings for available options.</div>
+</details>
+
+<details>
+  <summary>18. How are passwords stored?</summary>
+  <div class="content">UniVerse uses Firebase Authentication which follows industry best practices for secure password storage and verification; passwords are never stored in plaintext on our servers.</div>
+</details>
+
+<details>
+  <summary>19. How do I delete my account?</summary>
+  <div class="content">Use the Delete Account flow in Settings or visit the Delete Account page for step-by-step instructions. Deletion requests are processed promptly in accordance with our retention and legal obligations.</div>
+</details>
+
+<details>
+  <summary>20. What happens to my content when I delete my account?</summary>
+  <div class="content">Public profile data is removed; private messages and files are deleted or anonymized where technically feasible. Shared content that other users retain may persist but personal identifiers will be anonymized where possible.</div>
+</details>
+
+      </div>
+
+      <h2 style="margin-top:20px">Features & Usage</h2>
+      <div class="accordion">
+
+<details>
+  <summary>21. How do I join my department group?</summary>
+  <div class="content">Complete your profile with university, faculty, department and level details, then use Department Matching in Discover or the onboarding wizard to join relevant groups and channels.</div>
+</details>
+
+<details>
+  <summary>22. What are Department Captains and how do they help?</summary>
+  <div class="content">Department Captains are vetted student representatives who moderate department channels, approve notices and help surface official information; they reduce misinformation and centralize communication.</div>
+</details>
+
+<details>
+  <summary>23. How do course discussion channels work?</summary>
+  <div class="content">Course channels are organized spaces within UniVerse where students and staff can post announcements, share notes, pin handouts and ask questions; moderators and captains can pin resources and manage access.</div>
+</details>
+
+<details>
+  <summary>24. Can I upload files and handouts?</summary>
+  <div class="content">Yes — upload files, images and documents to channels or messages. Files are stored in Firebase Cloud Storage with access controls; large files may be subject to size and format guidelines.</div>
+</details>
+
+<details>
+  <summary>25. How does the GPA & CGPA calculator work?</summary>
+  <div class="content">Enter your course units and grades into the GPA/CGPA tool to compute your academic averages and simulate outcomes. You can save or export results for personal use.</div>
+</details>
+
+<details>
+  <summary>26. Can staff publish official notices?</summary>
+  <div class="content">Yes — staff and verified captains can publish notices and timetables which are displayed prominently to the affected groups; this ensures important communications are not missed.</div>
+</details>
+
+<details>
+  <summary>27. Are there limits to message history?</summary>
+  <div class="content">Message retention policies vary by university and channel settings; UniVerse stores message history to support practical usage but also provides data export and deletion options in line with privacy policies.</div>
+</details>
+
+<details>
+  <summary>28. How do notifications work?</summary>
+  <div class="content">UniVerse uses push notifications (Firebase Cloud Messaging) for urgent messages, mentions and official notices; users can control notification settings per channel and in-app preferences.</div>
+</details>
+
+<details>
+  <summary>29. Can I follow specific users or channels?</summary>
+  <div class="content">Yes — follow channels, courses and users to receive updates in your feed; followers and friends features help you stay connected with peers.</div>
+</details>
+
+<details>
+  <summary>30. How do I report incorrect or outdated notices?</summary>
+  <div class="content">Use the in-app report option on the notice or contact the relevant captain or support with details so moderators can review and, if necessary, retract or update the notice.</div>
+</details>
+
+<details>
+  <summary>31. Can I export my data or messages?</summary>
+  <div class="content">You can request a data export for account data and content; UniVerse provides machine-readable exports in line with privacy and legal requirements as described in the Privacy Policy.</div>
+</details>
+
+<details>
+  <summary>32. Is there a way to bookmark or save posts?</summary>
+  <div class="content">Yes — use the save/bookmark action on posts and resources to keep them in your personal library for easy access later.</div>
+</details>
+
+<details>
+  <summary>33. Can I restrict who messages me?</summary>
+  <div class="content">Privacy controls let you restrict direct messages to friends or followers only, and you can block or mute users at any time to prevent unwanted contact.</div>
+</details>
+
+<details>
+  <summary>34. How do groups differ from channels?</summary>
+  <div class="content">Groups are community spaces often centred on students or clubs with membership controls; channels are topic-focused streams (e.g., course channels or announcement channels) within groups or departments.</div>
+</details>
+
+<details>
+  <summary>35. What is a Verified Badge?</summary>
+  <div class="content">A Verified Badge identifies an account as authentic (staff, captains, or official organizations) after successful verification; it improves trust and may unlock moderation capabilities.</div>
+</details>
+
+      </div>
+
+      <h2 style="margin-top:20px">Captains, Verification & Community</h2>
+      <div class="accordion">
+
+<details>
+  <summary>36. How do I apply to be a Department Captain?</summary>
+  <div class="content">Apply via the Verify page and submit the required documentation (student ID, nomination, or staff endorsement); UniVerse and university partners review applications and activate captain badges on approval.</div>
+</details>
+
+<details>
+  <summary>37. What are the responsibilities of a captain?</summary>
+  <div class="content">Captains moderate department channels, approve official notices, assist with onboarding, and liaise with staff and UniVerse for escalation and policy enforcement.</div>
+</details>
+
+<details>
+  <summary>38. How are captains nominated?</summary>
+  <div class="content">Existing captains, staff, or recognized student organizations can nominate candidates; nominations include supporting evidence and are verified during the approval process.</div>
+</details>
+
+<details>
+  <summary>39. Can captains be removed?</summary>
+  <div class="content">Yes — captains may have their badge revoked for policy violations, inactivity, or at the request of university partners; appeals are handled through support channels.</div>
+</details>
+
+<details>
+  <summary>40. How do verification documents get handled?</summary>
+  <div class="content">Verification documents are stored securely and used only for identity confirmation. UniVerse does not publish verification documents and minimizes retention in line with privacy requirements.</div>
+</details>
+
+<details>
+  <summary>41. Can I see a list of captains for my department?</summary>
+  <div class="content">Yes — department pages list active captains and verified accounts; contact details or office hours may be shown if provided by the captain.</div>
+</details>
+
+<details>
+  <summary>42. Do captains have special moderation tools?</summary>
+  <div class="content">Captains have tools to pin notices, approve resources, and flag content for UniVerse moderation, but sensitive moderation actions are reviewed by the moderation team to avoid misuse.</div>
+</details>
+
+<details>
+  <summary>43. Are captains paid or volunteer roles?</summary>
+  <div class="content">Most captain roles are volunteer positions supported by recognition and platform tools. Some universities may offer stipends or academic credit depending on local arrangements.</div>
+</details>
+
+<details>
+  <summary>44. How does UniVerse prevent captain impersonation?</summary>
+  <div class="content">Verification badges, documentation checks and staff endorsements reduce risk of impersonation; impersonation reports trigger immediate review and possible suspension.</div>
+</details>
+
+<details>
+  <summary>45. What if my department has no captain?</summary>
+  <div class="content">Students may nominate a captain or contact UniVerse partnerships to coordinate with the university for an official nomination and verification process.</div>
+</details>
+
+      </div>
+
+      <h2 style="margin-top:20px">Developers & Integration</h2>
+      <div class="accordion">
+
+<details>
+  <summary>46. What backend services does UniVerse use?</summary>
+  <div class="content">UniVerse leverages Google Firebase for core services: Firebase Authentication, Realtime Database, Cloud Storage and Cloud Messaging among other cloud services and integrations.</div>
+</details>
+
+<details>
+  <summary>47. Is there an API for UniVerse?</summary>
+  <div class="content">UniVerse exposes limited APIs and integration points for university partners; contact partnerships for access and integration support. Public API plans may be announced on the Roadmap.</div>
+</details>
+
+<details>
+  <summary>48. How can universities integrate timetables or LMS?</summary>
+  <div class="content">We support integrations via secure connectors and data feeds; universities should contact partnerships to arrange secure, privacy-compliant integrations with LMS or timetable systems.</div>
+</details>
+
+<details>
+  <summary>49. How are security rules enforced for data?</summary>
+  <div class="content">UniVerse uses Firebase security rules and role-based access controls to restrict reads/writes based on university, department and user roles, and performs regular audits of rules and logs.</div>
+</details>
+
+<details>
+  <summary>50. Where do I add my Firebase configuration?</summary>
+  <div class="content">For client integration, add Firebase configuration in a secure configuration file or environment during deployment; do not commit API keys to public repositories — use CI/CD secrets for production deployments.</div>
+</details>
+
+<details>
+  <summary>51. Can I self-host UniVerse?</summary>
+  <div class="content">UniVerse is delivered as a hosted SaaS platform; enterprise or university deployments may be arranged with dedicated hosting and contractual terms through partnerships.</div>
+</details>
+
+<details>
+  <summary>52. How do I report a security vulnerability?</summary>
+  <div class="content">Report security issues to help.universe.app@gmail.com with detailed steps to reproduce and any relevant logs. We respond promptly and follow responsible disclosure practices.</div>
+</details>
+
+<details>
+  <summary>53. Does UniVerse offer webhooks or event subscriptions?</summary>
+  <div class="content">Webhook/event subscription support is available for enterprise partners; contact partnerships to discuss use cases and secure implementation details.</div>
+</details>
+
+<details>
+  <summary>54. What data formats are used for exports?</summary>
+  <div class="content">Data exports are provided in machine-readable formats such as JSON and CSV to facilitate portability and compliance with data subject requests.</div>
+</details>
+
+<details>
+  <summary>55. Can I contribute to the front-end design system?</summary>
+  <div class="content">The UniVerse design system is maintained by the product design team; contributions from partners can be coordinated through design reviews and contribution agreements.</div>
+</details>
+
+      </div>
+
+      <h2 style="margin-top:20px">Privacy, Data & Legal</h2>
+      <div class="accordion">
+
+<details>
+  <summary>56. Where can I read the privacy policy?</summary>
+  <div class="content">The full Privacy Policy is available on the Privacy Policy page which explains data collection, use, retention and your rights as a user.</div>
+</details>
+
+<details>
+  <summary>57. How does UniVerse use cookies?</summary>
+  <div class="content">UniVerse uses cookies for authentication, preferences and analytics; the Cookie Policy explains each cookie type and how to manage them in your browser.</div>
+</details>
+
+<details>
+  <summary>58. Can I request deletion of my data?</summary>
+  <div class="content">Yes — submit a deletion request via the Delete Account page or contact support; we will process requests in accordance with legal obligations and our retention policy.</div>
+</details>
+
+<details>
+  <summary>59. Will my data be shared with third parties?</summary>
+  <div class="content">UniVerse shares data only with service providers (e.g., Firebase) who act on our behalf, and with universities as required for course and departmental functionality; we do not sell personal data.</div>
+</details>
+
+<details>
+  <summary>60. How long is my data retained?</summary>
+  <div class="content">Retention periods vary by data type: active account data is retained while your account exists, logs and backups have limited retention periods, and certain records may be retained to comply with legal obligations.</div>
+</details>
+
+<details>
+  <summary>61. Does UniVerse comply with international data protection laws?</summary>
+  <div class="content">UniVerse is designed to respect applicable data protection laws and international transfers; specific compliance (e.g., GDPR) depends on contractual arrangements with universities and data processing details.</div>
+</details>
+
+<details>
+  <summary>62. How do I exercise data access or portability rights?</summary>
+  <div class="content">Contact help.universe.app@gmail.com with your request. We will verify your identity and provide data exports or take corrective actions in accordance with applicable law.</div>
+</details>
+
+<details>
+  <summary>63. Are backups encrypted?</summary>
+  <div class="content">Backups are stored with encryption at rest and in transit, and access to backup data is restricted and audited by our operations team.</div>
+</details>
+
+<details>
+  <summary>64. Who is the data controller for UniVerse?</summary>
+  <div class="content">UniVerse, as the operating organization, acts as the data controller for user data; specific university deployments may have different arrangements which will be documented in partnership agreements.</div>
+</details>
+
+      </div>
+
+      <h2 style="margin-top:20px">Troubleshooting & Support</h2>
+      <div class="accordion">
+
+<details>
+  <summary>65. The app crashes — what should I do?</summary>
+  <div class="content">Collect app logs, device info, OS version and steps to reproduce, then report the issue via the in-app Bug Report or email support; include screenshots if possible to help our engineers diagnose the problem quickly.</div>
+</details>
+
+<details>
+  <summary>66. I can't receive push notifications — how do I fix it?</summary>
+  <div class="content">Ensure notifications are enabled in your device settings and in-app settings; confirm the app has permission and that network connectivity is available. Contact support if issues persist.</div>
+</details>
+
+<details>
+  <summary>67. Messages are delayed — why?</summary>
+  <div class="content">Delays can be caused by network issues, server-side throttling or background restrictions on your device. Check connectivity and app background permissions and report systemic delays to support.</div>
+</details>
+
+<details>
+  <summary>68. How do I clear the app cache?</summary>
+  <div class="content">On Android, clear the app cache via Settings &gt; Apps &gt; UniVerse &gt; Storage &gt; Clear Cache. On the web, clear site data or use an incognito window for a quick check.</div>
+</details>
+
+<details>
+  <summary>69. I reported a user — what happens next?</summary>
+  <div class="content">Our moderation team reviews reports, may request additional evidence, and takes action ranging from warnings to suspensions. You will be notified of the outcome where appropriate.</div>
+</details>
+
+<details>
+  <summary>70. How do I recover deleted content?</summary>
+  <div class="content">Deleted content recovery depends on retention and backups; contact support immediately with details — recovery may be possible within a limited timeframe in accordance with policies.</div>
+</details>
+
+<details>
+  <summary>71. How can I speed up the app?</summary>
+  <div class="content">Keep the app updated, disable unnecessary background syncs, free device storage and use Wi-Fi for large uploads; contact support for device-specific optimization tips if needed.</div>
+</details>
+
+<details>
+  <summary>72. The website shows a certificate or loading error — what should I do?</summary>
+  <div class="content">Refresh the page, check your system date/time, and try a different browser. If the error persists, report it to support with a screenshot and the URL for investigation.</div>
+</details>
+
+      </div>
+
+      <h2 style="margin-top:20px">Downloads, Deployment & Admin</h2>
+      <div class="accordion">
+
+<details>
+  <summary>73. Where can I download the Android app?</summary>
+  <div class="content">Download the app from Google Play via the Download page or use the direct APK link provided on the Download page for offline installation (verify SHA256 checksum before installing).</div>
+</details>
+
+<details>
+  <summary>74. Why is the APK not installing?</summary>
+  <div class="content">Ensure "Install unknown apps" permission is enabled for the installing app, confirm the APK is compatible with your device and verify the APK signature and checksum before installing.</div>
+</details>
+
+<details>
+  <summary>75. How do I deploy the website to Firebase Hosting?</summary>
+  <div class="content">Use the Firebase CLI: install firebase-tools, run firebase login, initialize hosting with firebase init hosting, and deploy with firebase deploy --only hosting. See README for details.</div>
+</details>
+
+<details>
+  <summary>76. Can my university host a private instance?</summary>
+  <div class="content">Private or enterprise deployments are available via partnership agreements; contact our partnerships team to discuss dedicated hosting and compliance requirements.</div>
+</details>
+
+<details>
+  <summary>77. How do I configure SEO and social previews?</summary>
+  <div class="content">Provide og-image, meta tags and structured data; the site includes templates for Open Graph and JSON-LD which can be customized for each page in production.</div>
+</details>
+
+<details>
+  <summary>78. How do I integrate Firebase credentials securely?</summary>
+  <div class="content">Do not commit credentials to source control; inject config at build/deploy time using environment variables or CI secrets. Use server-side functions for sensitive operations.</div>
+</details>
+
+<details>
+  <summary>79. How can admins monitor service health?</summary>
+  <div class="content">Use the Status page for quick checks and integrate UniVerse with your observability stack or Firebase Monitoring for enterprise-grade alerts and dashboards.</div>
+</details>
+
+<details>
+  <summary>80. Who do I contact for partnership integrations?</summary>
+  <div class="content">Contact partnerships via the Contact page or email help.universe.app@gmail.com to start integration discussions and schedule a demo or pilot.</div>
+</details>
+
+      </div>
+
+      <h2 style="margin-top:20px">Policies, Legal & Miscellaneous</h2>
+      <div class="accordion">
+
+<details>
+  <summary>81. Where are UniVerse's Terms of Service?</summary>
+  <div class="content">The full Terms of Service are available on the Terms page and govern your use of the UniVerse service and the legal relationship between you and UniVerse.</div>
+</details>
+
+<details>
+  <summary>82. Does UniVerse support accessibility?</summary>
+  <div class="content">Yes — UniVerse follows accessibility best practices for keyboard navigation, readable contrast, and semantic markup; we continue to improve accessibility based on feedback and audits.</div>
+</details>
+
+<details>
+  <summary>83. How do I provide feedback on the product?</summary>
+  <div class="content">Use the Feedback option in the app, submit a feature request via Support, or email help.universe.app@gmail.com with your ideas and use cases.</div>
+</details>
+
+<details>
+  <summary>84. Does UniVerse support multiple languages?</summary>
+  <div class="content">Multi-language support is planned and may be available for key regions. The platform currently supports English and localization improvements are on the roadmap.</div>
+</details>
+
+<details>
+  <summary>85. How do I cite UniVerse in academic work?</summary>
+  <div class="content">Cite UniVerse using the product name and URL; for partnership pilots or datasets, request formal citation guidance from UniVerse partnerships or legal teams.</div>
+</details>
+
+<details>
+  <summary>86. Can I export content for research?</summary>
+  <div class="content">Research exports require approval and may involve data agreements to protect privacy; contact partnerships to discuss data access and anonymization requirements.</div>
+</details>
+
+<details>
+  <summary>87. How does UniVerse handle copyright takedown requests?</summary>
+  <div class="content">We comply with applicable copyright laws and process takedown requests according to our Terms of Service; provide DMCA-style notices to help.universe.app@gmail.com with necessary information.</div>
+</details>
+
+<details>
+  <summary>88. Are developer or admin guides available?</summary>
+  <div class="content">Yes — partner and admin documentation is available to universities and enterprise partners; contact partnerships for access to admin consoles and integration guides.</div>
+</details>
+
+<details>
+  <summary>89. Can I transfer my UniVerse data to another account?</summary>
+  <div class="content">Data portability requests are supported; contact support to request an export and transfer options, subject to verification and policies.</div>
+</details>
+
+<details>
+  <summary>90. How does UniVerse handle legal requests (subpoenas)?</summary>
+  <div class="content">We respond to lawful requests for data with appropriate legal process and notify affected users where permitted; contact help.universe.app@gmail.com for privacy inquiries.</div>
+</details>
+
+      </div>
+
+      <h2 style="margin-top:20px">Advanced & Community Questions</h2>
+      <div class="accordion">
+
+<details>
+  <summary>91. How are study groups organized?</summary>
+  <div class="content">Students create groups tied to departments, courses or interests and use channels for scheduling, file sharing and discussions; captains and moderators help keep groups on-topic.</div>
+</details>
+
+<details>
+  <summary>92. Can I monetize content or sell in the campus marketplace?</summary>
+  <div class="content">Marketplace features are governed by platform policies; individual listings and transactions must comply with community rules and any applicable university policies.</div>
+</details>
+
+<details>
+  <summary>93. How can I host events on UniVerse?</summary>
+  <div class="content">Use Events tools (coming on roadmap) or coordinate with captains to publish events in channels; include event details, location, RSVP and resources for attendees.</div>
+</details>
+
+<details>
+  <summary>94. Does UniVerse offer analytics for course engagement?</summary>
+  <div class="content">Analytics dashboards for course and department engagement are available to staff and partners under privacy agreements to help measure participation and resource usage.</div>
+</details>
+
+<details>
+  <summary>95. How are lost & found posts handled?</summary>
+  <div class="content">Lost & Found posts are managed in dedicated channels; captains and staff can pin important notices and help coordinate reunification of items with owners.</div>
+</details>
+
+<details>
+  <summary>96. Can I link UniVerse to external learning tools?</summary>
+  <div class="content">Integrations with external tools are supported through secure connectors and partner arrangements; contact partnerships to explore integration pathways.</div>
+</details>
+
+<details>
+  <summary>97. What should I do if I find a bug in grading or timetable sync?</summary>
+  <div class="content">Report the issue via Support with precise details and screenshots; we prioritize fixes that affect student workflows and coordinate with university admin for urgent corrections.</div>
+</details>
+
+<details>
+  <summary>98. Does UniVerse provide moderation training?</summary>
+  <div class="content">Yes — UniVerse provides guidelines and training materials for captains and university moderators to ensure consistent and fair moderation practices.</div>
+</details>
+
+<details>
+  <summary>99. How do I suggest a new feature for the roadmap?</summary>
+  <div class="content">Submit feature proposals through the Support portal or contact partnerships; include use cases and impact to help our product team evaluate prioritization.</div>
+</details>
+
+<details>
+  <summary>100. Where can I get more help?</summary>
+  <div class="content">For more help visit the Support and Contact pages, use the in-app help widget, or email help.universe.app@gmail.com for direct assistance.</div>
+</details>
+
+      </div>
+    </div></section>
+
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><img src="/images/logo-mark.svg" alt="UniVerse"><div><strong>UniVerse</strong><div class="muted">Your Academic Social Network</div></div></div><div class="footer-right"><div>Support: <a href="mailto:help.universe.app@gmail.com">help.universe.app@gmail.com</a></div></div></div></footer>
+  <script src="/js/theme.js"></script>
+</body>
+</html>
