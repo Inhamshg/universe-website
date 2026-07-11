@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
-  <rect width="160" height="160" rx="28" fill="#6c8cff"/>
-  <text x="50%" y="52%" font-family="Inter, Arial, sans-serif" font-size="34" fill="#fff" dominant-baseline="middle" text-anchor="middle">UV</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">UniVerse logo mark: speech bubble with graduation cap and verified check</title>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#57c85a"/>
+      <stop offset="100%" stop-color="#0f5f2e"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#2aa1ff"/>
+      <stop offset="100%" stop-color="#1a73e8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- speech bubble outline -->
+  <path d="M22 46c0-14 12-26 26-26h44l18 8v46c0 14-12 26-26 26H62l-14 12v-12H48C34 100 22 88 22 74V46z" fill="url(#g1)" opacity="0.98" transform="translate(0 0)"/>
+
+  <!-- cap (mortarboard) -->
+  <g transform="translate(8,6) scale(0.9)">
+    <path d="M76 28L28 48l48 20 48-20L76 28z" fill="#073a1a"/>
+    <path d="M60 50v18c0 6 12 12 16 12s16-6 16-12V50" fill="#0b4b1e" opacity="0.98"/>
+    <!-- tassel -->
+    <path d="M28 46c8 2 14 4 32 4" stroke="#bfe7b9" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- verified check circle -->
+  <g transform="translate(118,18)">
+    <circle cx="0" cy="0" r="16" fill="url(#g2)"/>
+    <path d="M-6 0l4 6 10-10" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
 </svg>

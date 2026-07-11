@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">UniVerse — Your Academic Social Network</title>
   <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#6c8cff"/>
-      <stop offset="1" stop-color="#7ef2c1"/>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#7de3a8"/>
+      <stop offset="100%" stop-color="#2aa1ff"/>
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#57c85a"/>
+      <stop offset="100%" stop-color="#0f5f2e"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <text x="60" y="110" font-family="Inter, Arial, sans-serif" font-size="56" fill="#021022">UniVerse</text>
-  <text x="60" y="170" font-family="Inter, Arial, sans-serif" font-size="28" fill="#021022">Your Academic Social Network</text>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- centered logo mark -->
+  <g transform="translate(300,110) scale(1.6)">
+    <path d="M22 46c0-14 12-26 26-26h44l18 8v46c0 14-12 26-26 26H62l-14 12v-12H48C34 100 22 88 22 74V46z" fill="url(#logoGrad)" opacity="0.98"/>
+    <g transform="translate(8,6) scale(0.9)">
+      <path d="M76 28L28 48l48 20 48-20L76 28z" fill="#073a1a"/>
+      <path d="M60 50v18c0 6 12 12 16 12s16-6 16-12V50" fill="#0b4b1e" opacity="0.98"/>
+    </g>
+    <g transform="translate(118,18)">
+      <circle cx="0" cy="0" r="16" fill="#1a73e8"/>
+      <path d="M-6 0l4 6 10-10" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+
+  <!-- wordmark -->
+  <text x="700" y="360" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="96" fill="#06313a" font-weight="700">Uni<tspan fill="#57c85a">Verse</tspan></text>
+
 </svg>
